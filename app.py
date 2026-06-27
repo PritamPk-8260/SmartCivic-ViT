@@ -199,7 +199,7 @@ def admin_login():
             return redirect(url_for('admin_dashboard'))
         else:
             flash("Wrong password", "danger")
-    return render_template("admin_login.html")
+    return render_template("admin.html")
 
 @app.route('/admin/dashboard')
 def admin_dashboard():
